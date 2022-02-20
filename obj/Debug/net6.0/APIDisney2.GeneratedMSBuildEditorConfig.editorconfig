@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = APIDisney2
+build_property.RootNamespace = APIDisney2
+build_property.ProjectDir = C:\Users\Ianch\OneDrive\Escritorio\PROEM\APIDisney2\AlkemyChallenge.Net\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Ianch\OneDrive\Escritorio\PROEM\APIDisney2\AlkemyChallenge.Net
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Generos/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJvc1xHZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Peliculas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Peliculas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Peliculas/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXEdldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Peliculas/GetListado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXEdldExpc3RhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Peliculas/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXFBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Personajes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWplc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Personajes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWplc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Personajes/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWplc1xHZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Personajes/GetListado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWplc1xHZXRMaXN0YWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Personajes/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWplc1xQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ianch/OneDrive/Escritorio/PROEM/APIDisney2/AlkemyChallenge.Net/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2ybzwkyhe6

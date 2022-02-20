@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using APIDisney2.Models;
+@model IEnumerable<Genero>
+@{
+    ViewData["Title"] = "Genero";
+}
+    @if(Model.ToList().Count>0)
+    {
+      <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Generos</th>
+                 <th>Foto</th>
+                 <th>Peliculas asociadas</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var obj in Model)
+            {
+                <tr>
+                    <td>
+                        @obj.Nombre
+                    </td>
+                    <td>
+                        <img src="@obj.ImagenGenero" width=250 height=200 >
+                    </td>
+                    <td>
+                        @obj.PeliculasAsociadas
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>  
+    }else
+    {
+        <div class="alert alert-warning">
+            No se encontro ningun elemento.
+        </div>
+    }

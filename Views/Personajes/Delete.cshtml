@@ -1,0 +1,47 @@
+﻿@model APIDisney2.Models.Personaje
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="DeletePost">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Id" hidden/>
+            <div class="form-group">
+                <label asp-for="ImagenPersonaje" class="control-label"></label>
+                <input asp-for="ImagenPersonaje" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Edad" class="control-label"></label>
+                <input asp-for="Edad" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Historia" class="control-label"></label>
+                <input asp-for="Historia" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="PeliculasId" class="control-label"></label>
+                <input asp-for="PeliculasId" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Borrar" class="btn btn-danger" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="characters" asp-action="">Back to List</a>
+</div>

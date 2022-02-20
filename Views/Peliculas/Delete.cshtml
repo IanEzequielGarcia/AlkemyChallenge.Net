@@ -1,0 +1,48 @@
+﻿@model APIDisney2.Models.Pelicula
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Edit</h1>
+
+<h4>Pelicula</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="DeletePost">
+            <input asp-for="Id" hidden/>
+            <div class="form-group">
+                <label asp-for="ImagenPelicula" class="control-label"></label>
+                <input asp-for="ImagenPelicula" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaEstreno" class="control-label"></label>
+                <input asp-for="FechaEstreno" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Calificacion" class="control-label"></label>
+                <input asp-for="Calificacion" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonajesAsociados" class="control-label"></label>
+                <input asp-for="PersonajesAsociados" disabled class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Borrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="movies" asp-action="">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
