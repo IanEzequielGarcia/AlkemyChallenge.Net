@@ -10,7 +10,7 @@
     <div>
         <a asp-controller="movies" asp-action="">Volver al Listado</a>
     </div>
-    @if(Model.ToList().Count>0)
+    @if(Model!=null&&Model.ToList().Count>0)
     {
       <table class="table table-bordered table-striped">
         <thead>

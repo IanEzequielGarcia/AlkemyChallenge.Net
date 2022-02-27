@@ -10,7 +10,7 @@
 <div>
     <a asp-action="Post">Agregar Personaje</a>
 </div>
-    @if(Model.ToList().Count>0)
+    @if(Model!=null&&Model.ToList().Count>0)
     {
       <table class="table table-bordered table-striped">
         <thead>

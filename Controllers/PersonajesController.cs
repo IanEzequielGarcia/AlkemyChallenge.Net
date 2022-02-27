@@ -1,10 +1,11 @@
 ﻿using APIDisney2.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace APIDisney2.Controllers
 {
-    [Route("[controller]")]
+    [Authorize]
     public class PersonajesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,15 +21,36 @@ namespace APIDisney2.Controllers
             IEnumerable<Personaje> personajes = _context.Personaje;
             try
             {
-                if(name==null&&age==0&&movies==0)
+                if (name == null && age == 0 && movies == 0)
                 {
                     return View(personajes);
                 }
-                return View(personajes.Where(personajes => personajes.Nombre == name||personajes.Edad==age||personajes.PeliculasId==movies));
+                else if (movies != 0)
+                {
+                    IEnumerable<Pelicula> peliculas = _context.Pelicula;
+                    try
+                    {
+                        peliculas = peliculas.Where(peliculas => peliculas.Id == movies);
+                        if (personajes.Any(personajes => personajes.PeliculasId == peliculas.FirstOrDefault().Id))
+                        {
+                            personajes = personajes.Where(personajes => personajes.PeliculasId == peliculas.FirstOrDefault().Id);
+                        }
+                        return View(personajes);
+                    }
+                    catch (Exception)
+                    {
+                        return View();
+                    }
+                }
+                else
+                {
+                    return View(personajes.Where(personajes => personajes.Nombre == name || personajes.Edad == age));
+                }
+
             }
             catch (System.InvalidOperationException)
             {
-                return View(personajes);
+                return View();
             }
         }
 

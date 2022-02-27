@@ -10,7 +10,7 @@ using APIDisney2.Models;
 
 namespace APIDisney2.Controllers
 {
-    [Route("[controller]")]
+    [Authorize]
     public class PeliculasController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -33,17 +33,15 @@ namespace APIDisney2.Controllers
                 else if (genre != 0)
                 {
                     IEnumerable<Genero> genero = _context.Genero;
-                    Console.WriteLine(genero);
-                    IEnumerable<Genero> aux = null;
-                    try 
+                    try
                     {
-                        aux = genero.Where(genero => genero.Id == genre); 
+                        genero = genero.Where(genero => genero.Id == genre);
+                        ViewData["Genero"] = genero;
                     }
-                    catch (System.ArgumentNullException)
+                    catch (Exception)
                     {
-
+                        return View();
                     }
-                    ViewData["Genero"] = aux;
                 }
                 else if(order != null)
                 {
@@ -64,7 +62,7 @@ namespace APIDisney2.Controllers
             }
             catch (System.InvalidOperationException)
             {
-                return View(peliculas);
+                return View();
             }
         }
         // GET: api/peliculas/5

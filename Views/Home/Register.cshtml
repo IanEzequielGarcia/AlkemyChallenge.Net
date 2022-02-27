@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+@model bool
+@if(Model)
+{
+    <div class="alert alert-success">
+        Registrado Correctamente.
+    </div>
+}
+<h1>Registro</h1>
+<form method="post" asp-action="Register">
+    <input class="form-control" type="text" name="txtEmail" placeholder="Email"/>
+    <input class="form-control" type="password" name="txtPassword" placeholder="Contraseña"/>
+    <button type="submit">Registarse</button>
+</form>

@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace APIDisney2.Controllers
 {
-    [Route("[controller]")]
+    [Authorize]
     public class GenerosController : Controller
     {
         private readonly ApplicationDbContext _context;
